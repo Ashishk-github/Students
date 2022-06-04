@@ -16,9 +16,9 @@ class Student{
     eligibiltyforPlacements(minMarks){
         return(age)=>{return this.age>=age && this.boardMarks>=minMarks};
     }
-    printEligibleName(param){
-        if(param) console.log(this.name);
-    }
+    printEligibleName(minMarks){
+        return(age)=>{if(this.age>=age && this.boardMarks>=minMarks) {console.log(this.name)}};
+        }
     
 }
 var count=1;
@@ -30,9 +30,10 @@ let student5=new Student('John',16,7847598464,35);
 console.log(student1.eligibilty());
 console.log(student4.counter());
 console.log(student3.eligibiltyforPlacements(50)(12));
-student1.printEligibleName(student1.eligibiltyforPlacements(50)(15));
-student2.printEligibleName(student2.eligibiltyforPlacements(50)(15));
-student3.printEligibleName(student3.eligibiltyforPlacements(50)(15));
-student4.printEligibleName(student4.eligibiltyforPlacements(50)(15));
-student5.printEligibleName(student5.eligibiltyforPlacements(50)(15));
+student1.printEligibleName(50)(15);
+student2.printEligibleName(50)(15);
+student3.printEligibleName(50)(15);
+student4.printEligibleName(50)(15);
+student5.printEligibleName(50)(15);
+
 
