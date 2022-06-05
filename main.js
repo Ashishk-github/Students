@@ -1,4 +1,4 @@
-class Student{
+/*class Student{
     
     constructor(name,age,phNumber,boardMarks){
         this.name=name;
@@ -34,6 +34,15 @@ student1.printEligibleName(50)(15);
 student2.printEligibleName(50)(15);
 student3.printEligibleName(50)(15);
 student4.printEligibleName(50)(15);
-student5.printEligibleName(50)(15);
-
+student5.printEligibleName(50)(15);*/
+function event(){
+    let count=0
+    document.getElementById('Clickme').addEventListener('click',()=>{
+        console.log('Clicked',++count)
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+        console.log('DOM has loaded');
+    });
+}
+event();
 
